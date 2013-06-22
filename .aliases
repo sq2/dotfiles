@@ -22,10 +22,11 @@ alias bunyip='node ~/code/bunyip/cli.js'
 alias spotify="osascript ~/code/SpotifyControl/SpotifyControl.scpt"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
+alias d="cd ~/Dropbox" # [SQ2 CHANGED]
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="pico"
+alias sites="cd /Sites" # [SQ2 ADDED]
+alias p="pico" # [SQ2 CHANGED]
 alias g="git"
 alias h="history"
 alias j="jobs"
