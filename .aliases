@@ -80,6 +80,9 @@ alias c='pygmentize -O style=monokai -f console256 -g'
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
 
+# Restart Apache [SQ2 ADDED]
+alias apr="sudo apachectl restart"
+
 # Gzip-enabled `curl`
 alias gurl='curl --compressed'
 
