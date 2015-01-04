@@ -26,7 +26,6 @@ brew install narwhal
 brew tap homebrew/dupes
 brew install homebrew/dupes/grep
 brew tap josegonzalez/homebrew-php
-brew install php54
 
 # These two formulae didn’t work well last time I tried them:
 #brew install homebrew/dupes/vim
@@ -37,45 +36,45 @@ brew install ack
 #brew install exiv2
 brew install git
 #brew install imagemagick
-brew install lynx
-brew install node
-brew install pigz
+# brew install lynx
+# brew install node
+# brew install pigz
 brew install rename
-brew install rhino
+# brew install rhino
 brew install tree
-brew install webkit2png
-brew install zopfli
+# brew install webkit2png
+# brew install zopfli
 
-brew tap homebrew/versions
-brew install lua52
+# brew tap homebrew/versions
+# brew install lua52
 
 # Install native apps
-brew tap phinze/homebrew-cask
-brew install brew-cask
+# brew tap phinze/homebrew-cask
+# brew install brew-cask
 
-function installcask() {
-	if brew cask info "${@}" | grep "Not installed" > /dev/null; then
-		brew cask install "${@}"
-	else
-		echo "${@} is already installed."
-	fi
-}
+# function installcask() {
+# 	if brew cask info "${@}" | grep "Not installed" > /dev/null; then
+# 		brew cask install "${@}"
+# 	else
+# 		echo "${@} is already installed."
+# 	fi
+# }
 
-installcask dropbox
-installcask google-chrome
-installcask google-chrome-canary
-installcask imagealpha
-installcask imageoptim
-installcask iterm2
-installcask macvim
-installcask miro-video-converter
-installcask sublime-text
-installcask the-unarchiver
-installcask tor-browser
-installcask transmission
-installcask ukelele
-installcask virtualbox
-installcask vlc
+# installcask dropbox
+# installcask google-chrome
+# installcask google-chrome-canary
+# installcask imagealpha
+# installcask imageoptim
+# installcask iterm2
+# installcask macvim
+# installcask miro-video-converter
+# installcask sublime-text
+# installcask the-unarchiver
+# installcask tor-browser
+# installcask transmission
+# installcask ukelele
+# installcask virtualbox
+# installcask vlc
 
 # Remove outdated versions from the cellar
 brew cleanup
