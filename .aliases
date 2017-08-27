@@ -11,9 +11,17 @@ alias -- -="cd -"
 alias slt='open -a "Sublime Text"'
 # the subl symlink was probably set up already but in case it wasn't…
 # ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 
+# Laravel
 alias art="php artisan"
-alias guy="vendor/bin/codecept"
+alias a="php artisan"
+
+# Composer
+alias cu='composer update'
+alias ci='composer install'
+alias csu='composer self-update'
+alias cda='composer dump-autoload -o'
 
 # be nice
 alias please=sudo
@@ -21,7 +29,6 @@ alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.c
 
 # handy things
 alias bunyip='node ~/code/bunyip/cli.js'
-alias spotify="osascript ~/code/SpotifyControl/SpotifyControl.scpt"
 alias vlc="osascript ~/code/VLCControl/VLCControl.scpt"
 
 # Shortcuts
@@ -29,6 +36,7 @@ alias d="cd ~/Dropbox" # [SQ2 CHANGED]
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias sites="cd /Sites" # [SQ2 ADDED]
+alias vf="cd /Sites/vf" # [SQ2 ADDED]
 alias p="pico" # [SQ2 CHANGED]
 alias g="git"
 alias h="history"
@@ -208,3 +216,9 @@ done
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 7'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
+
+# Reload the shell (i.e. invoke as a login shell)
+alias reload="exec ${SHELL} -l"
+
+# Print each PATH entry on a separate line
+alias path='echo -e ${PATH//:/\\n}'
