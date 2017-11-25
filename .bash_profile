@@ -10,6 +10,9 @@ export PATH="~/Homestead:$PATH"
 export PATH="~/spark-installer:$PATH"
 export PATH="/Users/matt/Library/Application Support/GoodSync":$PATH
 export PATH="/Library/Application Support/GoodSync":$PATH
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+source ~/.profile
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -90,3 +93,5 @@ complete -W "NSGlobalDomain" defaults;
 #complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
