@@ -153,6 +153,7 @@ sudo chflags uchg /private/var/vm/sleepimage
 # Trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 # sudo defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -int 1 #[SQ2 FIX]
+sudo defaults write com.apple.AppleMultitouchTrackpad Clicking 1
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
@@ -364,8 +365,8 @@ defaults write com.apple.dock mouse-over-hilite-stack -bool true
 # Change minimize/maximize window effect
 defaults write com.apple.dock mineffect -string "scale"
 
-# Minimize windows into their application’s icon
-defaults write com.apple.dock minimize-to-application -bool true
+# Minimize windows into their application’s icon [SQ2 CHANGE]
+#defaults write com.apple.dock minimize-to-application -bool true
 
 # Enable spring loading for all Dock items
 defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
